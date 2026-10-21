@@ -8,8 +8,6 @@ import { ArrowRight, Flame } from "lucide-react";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-const MARQUEE_ITEMS = ["Strength", "HIIT", "Boxing", "Mobility", "Results"];
-
 export default function Hero() {
   const heroRef = useRef<HTMLElement>(null);
   const lenis = useLenis();
@@ -111,24 +109,6 @@ export default function Hero() {
           </motion.button>
         </motion.div>
       </motion.div>
-
-      <div className="relative z-10 border-t border-line bg-charcoal-deep/70 py-4 backdrop-blur-sm">
-        <div className="no-scrollbar flex w-full overflow-hidden">
-          <div className="animate-marquee flex shrink-0 items-center gap-8 pr-8">
-            {[...MARQUEE_ITEMS, ...MARQUEE_ITEMS, ...MARQUEE_ITEMS].map(
-              (item, i) => (
-                <span
-                  key={i}
-                  className="flex shrink-0 items-center gap-8 font-display text-2xl tracking-wide text-white-dim"
-                >
-                  {item}
-                  <span className="h-2 w-2 rounded-full bg-lime" />
-                </span>
-              ),
-            )}
-          </div>
-        </div>
-      </div>
     </section>
   );
 }

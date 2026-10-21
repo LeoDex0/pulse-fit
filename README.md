@@ -2,7 +2,9 @@
 
 Website for a strength and conditioning gym.
 
-**Live:** https://pulse-fit-three.vercel.app
+![Preview](.github/preview.jpg)
+
+**Live:** [pulse-fit-three.vercel.app](https://pulse-fit-three.vercel.app)
 
 ## Stack
 
